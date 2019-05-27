@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="m-main applyRefund-main">
+        <!-- 顶部 -->
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                申请退款
+            </div>
+            <div class="m-h-right">
+
+            </div>
+        </div>
+        <div class="form-list">
+            <!-- 申请类型 -->
+            <div class="m-form-group m-bd-bottom ">
+                <label class="form-label">
+                    申请类型
+                </label>
+                <!-- <input class="form-ipt" type="text" value="我要退货退款"> -->
+                <select class="form-ipt" name="" id="">
+                    <option value="我要退货退款">我要退货退款</option>
+                    <option value="我要退款(无需退货)">我要退款(无需退货)</option>
+                </select>
+            </div>
+            <!-- 申请原因 -->
+            <div class="m-form-group ">
+                <label class="form-label">
+                    申请原因
+                </label>
+                <!-- <input class="form-ipt" type="text" placeholder="点击选择申请原因"> -->
+                <select class="form-ipt" name="" id="">
+                    <option value="">多拍、拍错、不想要</option>
+                    <option value="">不喜欢、效果不好</option>
+                    <option value="">商品成分描述不符</option>
+                    <option value="">材质与商品描述不符</option>
+                    <option value="">大小尺寸与商品描述不符</option>
+                    <option value="">生产日期、保质期与商品描述不符</option>
+                    <option value="">颜色、款式、型号与描述不符</option>
+                    <option value="">质量问题</option>
+                    <option value="">收到商品少件、破损或污渍</option>
+                    <option value="">卖家发错货</option>
+                    <option value="">假冒品牌</option>
+                    <option value="">其他</option>
+                </select>
+            </div>
+            <!-- 退款金额 -->
+            <div class="m-form-group  money-group m-card">
+                <label class="form-label">
+                    退款金额
+                </label>
+                <span class="m-money-c">￥</span>
+                <input class="form-ipt m-money-c" type="text" value="14.6" placeholder="请输入退款金额">
+                <span class="max-tip">最多￥14.6</span>
+            </div>
+            <!-- 申请说明 -->
+            <div class=" m-p10 m-card apply-reasons">
+                <p class="m-sm-title">申请说明</p>
+                <div class="m-comment-box">
+                    <!-- 说明文字 -->
+                    <textarea id="commentText" class="comment-area" maxlength="500"
+                        placeholder="必填，请您详细填写申请理由"></textarea>
+                    <!-- 上传图片 -->
+                    <div class="imgs-box clearfix" id="imgsBox">
+                        <!-- 图片预览 -->
+                        <div id="previewImgsBox">
+                            <!-- 测试 -->
+                            <!-- <div class="upload-img preview-img">
+                                    <img src="http://iph.href.lu/200x200?text=%E5%8D%A0%E4%BD%8D" alt="">
+                                    <i class="del iconfont iconguanbi"></i>
+                                </div>
+                                <div class="upload-img preview-img">
+                                    <img src="http://iph.href.lu/200x200?text=%E5%8D%A0%E4%BD%8D" alt="">
+                                    <i class="del iconfont iconguanbi"></i>
+                                </div>
+                                <div class="upload-img preview-img">
+                                    <img src="http://iph.href.lu/200x200?text=%E5%8D%A0%E4%BD%8D" alt="">
+                                    <i class="del iconfont iconguanbi"></i>
+                                </div> -->
+                        </div>
+                        <!-- 上传入口 -->
+                        <div class="upload-img" id="uploadImgBox">
+                            <div class="text">
+                                <i class="iconfont iconshangchuantupian"></i>
+                                <p class="text-tip">添加图片</p>
+                                <input class="fill-ipt" type="file" name="" accept="image/*" id="uploadImgipt">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 联系方式 -->
+            <div class="m-form-group  money-group m-card">
+                <label class="form-label">
+                    联系电话
+                </label>
+                <input class="form-ipt" type="text" value="13988996666" placeholder="请输入联系电话">
+            </div>
+            <!-- 提交 -->
+            <div class=" m-card m-bd-top">
+                <button class=" m-btn m-submit-btn m-center-btn" id="">提交申请</button>
+            </div>
+        </div> 
+    </div>
+
+</body>
+<script src="./common/js/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

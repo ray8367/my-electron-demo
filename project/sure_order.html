@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="m-main sureOrder-main">
+        <!-- 顶部 -->
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                确认订单
+            </div>
+            <div class="m-h-right">
+
+            </div>
+        </div>
+        <!-- 收货信息 -->
+        <a href="./receive_address.html" class="m-receipt-info m-p10">
+            <!-- 收货人 -->
+            <p class="receipt-man">
+                <span class="user-name">张三</span>
+                <span class="phone">136*****315</span>
+            </p>
+            <!-- 收货地址 -->
+            <p class="receipt-address article ell">
+                重庆市巴南区南彭街道保利林语溪19栋3单元502重庆市巴南区南彭街道保利林语溪19栋3单元502庆市巴南区南彭街道保利林语溪19栋3单元502
+            </p>
+            <!-- 收货时间 -->
+            <p class="receipt-time">周一至周五收货</p>
+            <!-- 箭头 -->
+            <i class="jt-right iconfont iconxiangyoujiantou"></i>
+        </a>
+        <!-- 订单信息 -->
+        <div class="order-info m-p10 m-card">
+            <!-- 订单金额 -->
+            <div class="order-amount">
+                <!-- 概要 -->
+                <div class="order-show">
+                    <h4 class="m-center money-main m-sm-title">应付金额 ￥45.11</h4>
+                    <p class="m-center money-vice">含运费￥10.00</p>
+                    <div class="detail-entry">详情 <i class="entry-icon iconfont iconxiangxiajiantou"></i> </div>
+                </div>
+                <!-- 详情 -->
+                <div class="order-detail">
+                    <ul class="detail-list">
+                        <li class="m-list">
+                            <div class="m-l-left">商品金额</div>
+                            <div class="m-l-right">￥35.00</div>
+                        </li>
+                        <li class="m-list">
+                            <div class="m-l-left">总运费</div>
+                            <div class="m-l-right">￥10.00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 支付方式 -->
+        <ul class="pay-way m-p10">
+            <li class="m-list pay-need">
+                <div class="m-l-left"><h4>还需支付</h4></div>
+                <div class="m-l-right money-color">￥<em>35</em></div>
+            </li>
+            <li class="choose-pay m-bd-bottom">
+                <label>
+                    <!-- <input type="radio" name="pay-way" checked>在线支付 -->
+                    <div class="m-radio">
+                        <input type="radio" name="pay-way" checked>
+                        <span class="check"></span>
+                    </div>
+                    在线支付
+                </label>
+            </li>
+            <li class="choose-pay m-bd-bottom">
+                <label>
+                    <div class="m-radio">
+                        <input type="radio" name="pay-way" checked>
+                        <span class="check"></span>
+                    </div>
+                    货到付款
+                </label>
+            </li>
+        </ul>
+        <!-- 发票 -->
+        <ul class="order-invoice m-p10 m-card">
+            <li class="m-list list-icon">
+                <div class="m-l-left">开具发票</div>
+                <div class="m-l-right">不开发票</div>
+            </li>
+        </ul>
+        <!-- 订单提交 -->
+        <div class="settlement-bottom m-p10 m-bd-top">
+            <button class="order-submit m-btn m-submit-btn"><a href="./order_details.html">订单提交</a></button>
+        </div>
+    </div>
+</body>
+<script src="./js/common.js"></script>
+</html>

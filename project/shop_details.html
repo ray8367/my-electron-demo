@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./common/Swiper4.5.0/css/swiper.min.css">
+    <script src="./common/Swiper4.5.0/js/swiper.min.js"></script>
+    <title>商品详情</title>
+</head>
+<body>
+    <!-- 商品展示界面 -->
+    <div class="m-main shopDetails-main">
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                <!-- 商品展示 -->
+                <!-- 导航 -->
+                <nav class="nav-top">
+                    <a href="javascript:;" data-link="commodity" class="active">商品</a>
+                    <a href="javascript:;" data-link="comment">评论</a>
+                    <a href="javascript:;" data-link="detail">详情</a>
+                </nav>
+            </div>
+            <div class="m-h-right">
+                <a href="./index.html">
+                    <i class="iconfont iconshouye"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 商品展示 -->
+        <section id="commodity" class="commodity">
+            <!-- 商品图片轮播 -->
+            <div class="shop-show-banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./test_data/img/shop_show/b1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./test_data/img/shop_show/b2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./test_data/img/shop_show/b3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./test_data/img/shop_show/b4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./test_data/img/shop_show/b5.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 商品概要信息 -->
+            <div class="shop-outline-info m-card m-p10">
+                <!-- 价格 -->
+                <h2 class="money-color m-sm-title">￥<em>19.9</em></h2>
+                <!-- 标题 -->
+                <article class="article shop-title ell">
+                    REMAX 联想华硕戴尔苹果笔记本散热支架编写多功能底座桌面支架。台湾进口日光生活伸缩调理砧板水槽伸缩架可沥水菜板沥水架收纳盒
+                </article>
+                <!-- 商品描述 -->
+                <article class="article shop-describe ell">
+                    外观精致，工艺严谨，坚固耐用，轻薄材质
+                </article>
+            </div>
+            <!-- 商品参数 -->
+            <div class="shop-parame m-card m-p10">
+                <div class="parame-item">
+                    <p class="parame-title m-sm-title">颜色</p>
+                    <ul class="parame-info m-text-flow">
+                        <li class="active">藏青</li>
+                        <li>藏青A</li>
+                        <li>藏青B</li>
+                        <li>蓝色</li>
+                        <li>黑色</li>
+                        <li>本绿</li>
+                    </ul>
+                </div>
+                <div class="parame-item">
+                    <p class="parame-title m-sm-title">尺码</p>
+                    <ul class="parame-info m-text-flow">
+                        <li class="active">170/88A</li>
+                        <li>175/92A</li>
+                        <li>180/96A</li>
+                        <li>185/100A</li>
+                        <li>190/104A</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <!-- 评论 -->
+        <section class="comment m-card m-p10" id="comment">
+            <a href="./all_comment.html">
+                <p class="m-list list-icon">
+                    <sapn class="m-l-left m-strong">商品评价</sapn>
+                    <sapn class="m-l-right find-all">查看更多</sapn>
+                </p>
+                <div class="m-comment-item comment-one">
+                    <!-- 展示众多评价中的其中一条 -->
+                    <!-- 用户名 -->
+                    <p class="user-name">131*123415</p>
+                    <article class="article comment-text comment-conent ell">
+                        终于收到我需要的宝贝了，东西很好，价美物廉，谢谢掌柜的！说实在，这是我淘宝购物来让我最满意的一次购物。无论是掌柜的态度还是对物品，我都非常满意的。掌柜态度很专业热情，有问必答，回复也很快，我问了不少问题，他都不觉得烦，都会认真回答我，这点我向掌柜表示由衷的敬意，这样的好掌柜可不多。再说宝贝，正是我需要的，收到的时候包装完整，打开后让我惊喜的是，宝贝比我想象中的还要好！不得不得竖起大拇指。下次需要的时候我还会再来的，到时候麻烦掌柜给个优惠哦！
+                    </article>
+                </div>
+            </a>
+        </section>
+        <!-- 商品详情 -->
+        <section class="detail m-card m-strong" id="detail">
+            <p class="m-sm-title black detail-title">商品详情</p>
+            <div class="detail-cont">
+                <img src="./test_data/img/shop_show/detail/1.jpg" alt="">
+                <img src="./test_data/img/shop_show/detail/2.jpg" alt="">
+                <img src="./test_data/img/shop_show/detail/3.jpg" alt="">
+                <img src="./test_data/img/shop_show/detail/4.jpg" alt="">
+                <img src="./test_data/img/shop_show/detail/5.jpg" alt="">
+                <img src="./test_data/img/shop_show/detail/6.jpg" alt="">
+            </div>
+        </section>
+        <div class="no-more">
+            —— 没有更多了哦 ——
+        </div>
+        <!-- 返回顶部 -->
+        <div class="go-top hide" id="goTop" onclick="goTop()">
+            <div class="go-top-inner">
+                <p>
+                    <i class="iconfont icondingbu"></i>
+                </p>
+                <p>顶部</p>
+
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer class="show-footer ">
+            <!-- 客服入口 -->
+            <a href="./customer_service.html" class="kefu-entry">
+                <i class="iconfont iconkefu"></i>
+                <p>客服</p>
+            </a>
+            <!-- 购物车入口 -->
+            <a href="./shop_car.html" class="car-entry">
+                <i class="iconfont icongouwuche"></i>
+                <p>购物车</p>
+            </a>
+            <!-- 购买 -->
+            <div class="buy-group">
+                <!-- 加购 -->
+                <span class="add-car buy-item" id="addCar">加入购物车</span>
+                <!-- 直接买 -->
+                <a href="./sure_order.html" class="go-buy buy-item" id="goBuy">
+                    直接购买
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./common/js/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/shop_details.js"></script>
+
+</html>

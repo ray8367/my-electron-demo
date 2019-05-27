@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!-- <title>Document</title> -->
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/iconfont/iconfont.js"></script>    
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body class="register-body">
+    <div class="m-main register-main" id="registerMain">
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                注册新用户
+            </div>
+            <div class="m-h-right">
+
+            </div>
+        </div>
+        <form class="m-user-box register-box register-form">
+            <div class="m-form-group   ">
+                <i class="label-icon iconfont iconxingming"></i>
+                <label class="form-label">
+                    姓名
+                </label>
+                <input class="form-ipt" type="text" name="memberNameipt" value="" placeholder="请输入姓名">
+            </div>
+            <div class="m-form-group ">
+                <i class="label-icon iconfont iconshoujihao"></i>
+                <label class="form-label">
+                    手机号
+                </label>
+                <input class="form-ipt" type="tel" maxlength="18" name="phoneIpt" value="" placeholder="请输入正确的手机号码">
+            </div>
+            <div class="m-form-group">
+                <i class="label-icon iconfont iconsuo"></i>
+                <label class="form-label">
+                    密码
+                </label>
+                <input class="form-ipt" type="password" name="pswordIpt" value="" placeholder="请输入密码">
+            </div>
+            <div class="m-form-group">
+                <i class="label-icon iconfont iconmima"></i>
+                <label class="form-label">
+                    确认密码
+                </label>
+                <input class="form-ipt" type="password" name="rePswordIpt" value="" placeholder="请输入密码">
+            </div>
+            <div class="m-form-group">
+                <i class="label-icon iconfont iconxingbie"></i>
+                <label class="form-label">
+                    性别
+                </label>
+                <div class="form-ipt">
+                    <label class="sex-choose">
+                        <div class="m-radio">
+                            <input type="radio" name="sex" checked value="男">
+                            <span class="check"></span>
+                        </div>
+                        <span class="label-text">男</span>
+                    </label>
+                    <label class="sex-choose">
+                        <div class="m-radio">
+                            <input type="radio" name="sex" value="女">
+                            <span class="check"></span>
+                        </div>
+                        <span class="label-text">女</span>
+                    </label>
+                </div>
+            </div>
+            <div class="m-form-group   ">
+                <i class="label-icon iconfont iconshoujihao"></i>
+                <label class="form-label">
+                    介绍人
+                </label>
+                <input class="form-ipt" type="tel" maxlength="18" name="introducerPhoneIpt" value="138888888888"
+                    placeholder="介绍人手机号码">
+            </div>
+            <div class="m-form-group ">
+                <i class="label-icon iconfont iconcalendar"></i>
+                <label class="form-label">
+                    出生年月
+                </label>
+                <input type="date" class="form-ipt" name="birthdayIpt" value="" placeholder="出生年月">
+            </div>
+            <div class="m-form-group  ">
+                <i class="label-icon iconfont iconecurityCode"></i>
+                <label class="form-label">
+                    验证码
+                </label>
+                <input type="tel" maxlength="8" name="checkCodeIpt" class="form-ipt" placeholder="请输入验证码">
+                <div class="check-code-box">
+
+                </div>
+            </div>
+            <button type="submit" class="register-submit user-submit m-btn m-submit-btn">注册</button>
+        </form>
+    </div>
+</body>
+<script src="./common/js/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/register.js"></script>
+
+</html>

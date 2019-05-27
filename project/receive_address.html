@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scala=no">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="m-main receiveAddress-main" id="receiveAddressMain">
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                收货地址
+            </div>
+            <div class="m-h-right">
+
+            </div>
+        </div>
+        <!-- 收货地址列表 -->
+        <div class="address-list" id="addressList">
+            <div class="address-item m-card m-p10">
+                <p class="info">
+                    <span class="human">张三</span>
+                    <span class="phone">123456789135</span>
+                </p>
+                <p class="info ell">
+                    <!-- 省 -->
+                    <span class="province">重庆市</span>
+                    <!-- 市 -->
+                    <span class="city">重庆市</span>
+                    <!-- 区/县 -->
+                    <span class="area">沙坪坝区</span>
+                    <!-- 地址 -->
+                    <span class="xs-address">龙湖东桥郡龙湖东dsfdsfdsfsfds桥郡龙湖东桥郡龙湖东桥郡龙湖东桥郡龙湖东桥郡龙湖东桥郡龙湖东桥郡龙湖东桥郡</span>
+                </p>
+                <div class="set m-list">
+                    <div class="m-l-left">
+                        <label>
+                            <div class="m-radio">
+                                <input type="radio" name="defalut-address" checked>
+                                <span class="check"></span>
+                            </div>
+                            设为默认
+                        </label>
+                    </div>
+                    <div class="m-right">
+                        <span class="set-work del">删除</span>
+                        <span class="set-work copy">复制</span>
+                        <span class="set-work edit">编辑</span>
+                    </div>
+                </div>
+            </div>
+            <div class="address-item m-card m-p10">
+                <p class="info">
+                    <span class="human">张三</span>
+                    <span class="phone">123456789135</span>
+                </p>
+                <p class="info ell">
+                    <!-- 省 -->
+                    <span class="province">重庆市</span>
+                    <!-- 市 -->
+                    <span class="city">重庆市</span>
+                    <!-- 区/县 -->
+                    <span class="area">沙坪坝区</span>
+                    <!-- 街道/镇 -->
+                    <span class="street">陈家桥</span>
+                    <!-- 地址 -->
+                    <span class="xs-address">龙湖东桥郡</span>
+                </p>
+                <div class="set m-list">
+                    <div class="m-l-left">
+                        <label>
+                            <div class="m-radio">
+                                <input type="radio" name="defalut-address">
+                                <span class="check"></span>
+                            </div>
+                            <span class="label-text">设为默认</span> 
+                        </label>
+                    </div>
+                    <div class="m-right">
+                        <span class="set-work del">删除</span>
+                        <span class="set-work copy">复制</span>
+                        <span class="set-work edit">编辑</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 编辑地址 -->
+        <div class="m-mark edit-address">
+            <div class="edit-box m-card m-p10">
+                <div class="edit-close" id="editClose">
+                    <i class="iconfont iconguanbi"></i>
+                </div>
+                <p class="edit-info edit-title">添加新收货地址</p>
+                <div class="edit-info info-base">
+                    <div class="base-item left">
+                        <label for="">名字:</label>
+                        <input type="text" class="human">
+                    </div>
+                    <div class="base-item right">
+                        <label for="">手机号:</label>
+                        <input type="number" class="phone">
+                    </div>
+                </div>
+                <div class="edit-info info-address m-list list-icon" id="chooseAddressEnter">
+                    <div class="m-l-left">
+                        <span class="province">请选择地区</span>
+                        <span class="city"></span>
+                        <span class="area"></span>
+                    </div>
+                    <!-- <span class="m-l-right"></span> -->
+                </div>
+                <p class="m-sm-title">详细地址（如街道、小区、乡镇、村）:</p>
+                <textarea name="" class="info-details-address"></textarea>
+                <button class="edit-save m-btn m-submit-btn" id="editSave">保存</button>
+            </div>
+        </div>
+
+        <!-- 地址选择器 -->
+        <div class="m-mark addreee-choose">
+            <div class="address-choose-box" id="addressChooseBox">
+                <!-- 顶部 -->
+                <div class="address-choose-top">
+                    <!-- 所选地区 -->
+                    <div class="left">
+                        <div class="address-set" id="addressSwitch">
+                            <span class="set-item set-province active">北京市</span>
+                            <span class="set-item set-city">北京市</span>
+                            <span class="set-item set-area">朝阳区</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="close right-item">取消</span>
+                        <span class="save right-item">保存</span>
+                    </div>
+                    <!-- <span class="close right">保存</span>
+                    <span class="close right">取消</span> -->
+                </div>
+                <!-- 区域列表 -->
+                <div class="address-content" id="addressContent">
+                    <div class="address-list province-list active">
+                        <p class="tip-title">选择省份/地区</p>
+                        <ul class="list-data">
+                            <li class="list-item m-p10 m-list list-icon">
+                                北京市
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="address-list city-list">
+                        <p class="tip-title">选择城市</p>
+
+                        <ul class="list-data"></ul>
+                    </div>
+                    <ul class="address-list area-list">
+                        <p class="tip-title">选择区/县</p>
+                        <ul class="list-data"></ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 新建地址 -->
+        <div class="add-receive m-card m-bd-top">
+            <button class="m-btn m-submit-btn m-center-btn" id="addReceiveBtn">添加收货地址</button>
+        </div>
+    </div>
+</body>
+<script src="./common/js/zepto.min.js"></script>
+<script src="./js/mock_data.js"></script>
+<script src="./js/common.js"></script>
+<script src="./common/js/address_picker.data.js"></script>
+<script src="./js/receive_address.js"></script>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body>
+    <ul class="m-main orderDetails-main">
+        <!-- 顶部 -->
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                订单详情
+            </div>
+            <div class="m-h-right">
+
+            </div>
+        </div>
+
+        <div class="m-state-box order-state cancellation">
+            <!-- 订单状态 (待付款，交易关闭，已发货，交易成功)-->
+
+            <!-- 待付款 -->
+            <!-- <div class="state-info m-p10">
+                <p class="info-title">
+                    <i class="iconfont iconziyuan"></i>
+                    等待买家付款
+                </p>
+                <p class="info-details">剩23小时59分自动关闭</p>
+            </div> -->
+
+            <!-- 交易取消 -->
+            <!-- <div class="state-info m-p10">
+                <p class="info-title">
+                    <i class="iconfont iconquxiaoshoukuan"></i>
+                    交易关闭
+                </p>
+                <p class="info-details">我不想买了</p>
+            </div> -->
+
+            <!-- 已发货 -->
+            <!-- <div class="state-info m-p10">
+                <p class="info-title">
+                    <i class="iconfont iconshenqingfahuo"></i>
+                    卖家已发货
+                </p>
+                <p class="info-details">还剩7天23小时自动确认</p>
+            </div> -->
+
+            <!-- 交易完成 -->
+            <div class="state-info">
+                <p class="info-title">
+                    <i class="iconfont iconchenggong1"></i>
+                    交易完成
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 收货信息 -->
+        <div class="m-receipt-info m-p10 m-card">
+            <!-- 收货人 -->
+            <p class="receipt-man">
+                <span class="user-name">张三</span>
+                <span class="phone">136*****315</span>
+            </p>
+            <!-- 收货地址 -->
+            <p class="receipt-address article ell">
+                重庆市重庆市市辖区南岸区 重庆交通大学
+            </p>
+        </div>
+
+        <!-- 商品信息 -->
+        <div class="m-shop-item m-card m-p10">
+            <!-- 顶部 -->
+            <div class="shop-top m-list">
+                <div class="m-l-left">
+                    官方旗舰店
+                </div>
+
+            </div>
+            <!-- 商品内容 -->
+            <div class="shop-info m-card">
+                <div class="info-left">
+                    <!-- 商品图片 -->
+                    <img src="https://gw.alicdn.com/bao/uploaded/i4/357580590/O1CN01DPLI6u1GEGBjqVKUu_!!357580590.jpg_200x200q50s150.jpg"
+                        alt="">
+                </div>
+                <div class="info-center">
+                    <!-- 标题 -->
+                    <p class="shop-title ell">Orico/奥睿科 透明外壳7口USB分线器 炫酷灯光 7口4口可选Orico/奥睿科 透明外壳7口USB分线器 炫酷灯光
+                        7口4口可选Orico/奥睿科
+                        透明外壳7口USB分线器 炫酷灯光 7口4口可选</p>
+                    <!-- 规格 -->
+                    <p class="shop-type ell">【7口透明】带供电口;1m带供电口;1m带供电口;1m带供电口;1m带供电口;1m带供电口;1m</p>
+                </div>
+                <div class="info-right">
+                    <!-- 单价 -->
+                    <p class="unit-price">￥9619.69</p>
+                    <!-- 数量 -->
+                    <p class="amount">X<em>3</em></p>
+                </div>
+            </div>
+            <!-- 价格统计 -->
+            <p class="price-statistics">
+                共<em class="amount">3</em>件商品 实付：<span class="money">￥28859.07</span>
+            </p>
+            <div class="shop-bottom clearfix m-card">
+                <div class="btn-group">
+                    <button class="m-btn">申请退款</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 价格统计 -->
+        <ul class="price-statistics m-card m-p10">
+            <li class="m-list">
+                <span class="m-l-l">商品总价</span>
+                <span class="m-l-r">￥28859.07</span>
+            </li>
+            <li class="m-list">
+                <span class="m-l-l">运费(快递)</span>
+                <span class="m-l-r">￥0.00</span>
+            </li>
+            <li class="m-list">
+                <span class="m-l-l">运费险</span>
+                <span class="m-l-r">￥0.00</span>
+            </li>
+            <li class="m-list">
+                <span class="m-l-l">订单总价</span>
+                <span class="m-l-r">￥0.00</span>
+            </li>
+            <li class="m-list statistics-result m-bd-top">
+                <span class="m-l-l">需付款</span>
+                <span class="m-l-r"><span class="m-money-c">￥28859.07</span></span>
+            </li>
+        </ul>
+
+        <!-- 订单信息 -->
+        <ul class="order-info m-p10 m-card">
+            <li>订单编号： <span id="orderNum">3115415665564165</span><em class="m-copy copyNumBtn" id="copyNumBtn">复制</em>
+            </li>
+            <li>支付方式： 支付宝</li>
+            <li>下单时间： 2019-02-18 00:02:01</li>
+            <li>发货时间： 2019-02-18 00:02:01</li>
+            <li>成交时间： 2019-02-18 00:02:01</li>
+            <li>快递方式： 韵达快递</li>
+            <li>快递单号： 13213541413131</li>
+        </ul>
+
+        <!-- 底部 -->
+        <div class="m-check-bottom m-bd-top">
+            <div class="right">
+                <button class="m-btn m-remove-btn" id="removeCar">
+                    <a href="javascript:void();">删除订单</a>
+                </button>
+
+                <button class="m-btn" id="removeCar">
+                    <a href="./logistics.html">查看物流</a>
+                </button>
+                <button class="m-btn" id="removeCar">
+                    <a href="javascript:void();">评价</a>
+                </button>
+            </div>
+        </div>
+        </div>
+
+</body>
+<script src="./js/common.js"></script>
+<script>
+    (function () {
+        var order_details = {
+            // 复制单号
+            copyOddNum: function () {
+                var copyOddNumNode = document.getElementById('copyNumBtn');
+                var oddNum = document.getElementById('orderNum');
+                copyOddNumNode.onclick = function () {
+                    copyText(oddNum)
+                }
+            },
+            init: function () {
+                this.copyOddNum();
+            }
+        }
+
+        order_details.init();
+    }())
+</script>
+
+</html>

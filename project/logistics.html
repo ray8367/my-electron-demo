@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./common/js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="m-main logistics-main" id="logisticsMain">
+        <div class="m-header">
+            <div class="m-h-left">
+                <a href="javascript:void(0);" onclick="goBack()">
+                    <i class="iconfont iconxiangzuojiantou"></i>
+                </a>
+            </div>
+            <div class="m-h-center">
+                物流信息
+            </div>
+            <div class="m-h-right">
+            </div>
+        </div>
+        <!-- 商品信息 -->
+        <div class="m-shop-item m-card m-p10">
+                <!-- 商品信息 -->
+                <div class="shop-info m-card">
+                    <div class="info-left">
+                        <!-- 商品图片 -->
+                        <img src="https://gw.alicdn.com/bao/uploaded/i4/357580590/O1CN01DPLI6u1GEGBjqVKUu_!!357580590.jpg_200x200q50s150.jpg" alt="">
+                    </div>
+                    <!-- 物流基本信息 -->
+                    <div class="logistics-base info-center">
+                        <p>物流公司：<span class="company">韵达快递</span></p>                        
+                        <p>物流单号：<span id="oddNum">132434564544</span> <em class="m-copy" id="copyOddNum">复制</em></p>                        
+                        <p>物流电话：<span class="tel">95546</span></p>
+                    </div>
+                </div>
+        </div>
+        <!-- 物流信息 -->
+        <div class="m-card m-p10">
+            <p class="status-title">物流状态</p>
+            <ul class="status-list">
+                <li>
+                    <p class="content">【重庆市】 快递已入快递柜签收，如有问题请联系业务员</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+                <li>
+                    <p class="content">【重庆市】 重庆南岸区南坪二公司学府分布，派送员 罗刚 1398888888</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+                <li>
+                    <p class="content">【重庆市】 已到达 重庆南岸区南坪二公司；马上为您派送</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+                <li>
+                    <p class="content">【重庆市】 已离开 重庆分拨中心</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+                <li>
+                    <p class="content">【重庆市】 已到达 重庆分拨中心</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+                <li>
+                    <p class="content">【重庆市】 已离开 武汉分拨中心；发往 重庆分拨中心</p>
+                    <p class="time">2019-04-29 16:35:66</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./common/js/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/logistics.js"></script>
+</html>
