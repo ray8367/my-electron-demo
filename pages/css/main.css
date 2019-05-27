@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+.line{
+    display: block;
+    margin: 32px;
+}

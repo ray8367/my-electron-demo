@@ -1,5 +1,7 @@
 "use strict";
-
+// 渲染进程
+const {BrowserWindow} = require('electron').remote;
+const path = require('path');
 (function () {
   var login = {
     userPhoneIpt: document.getElementById('userPhoneIpt'),
@@ -38,11 +40,14 @@
 
         if (res.status) {
           // 登录成功
-          console.log('验证通过');
-          sessionStorage.setItem('user_info', JSON.stringify({
-            user_name: user_info.user_name
+          console.log('验证通过'); // sessionStorage.setItem('user_info',JSON.stringify({user_name:user_info.user_name}));
+          // 将账号密码存储起来(下次自动登录)
+
+          localStorage.setItem('user_info', JSON.stringify({
+            user_name: user_info.user_name,
+            user_pwd: user_info.user_pwd
           }));
-          window.location.href = '../person.html';
+          window.location.href = './person.html';
         } else {
           userTip(res.errMsg, 'error');
         }
@@ -82,7 +87,19 @@
         var checkCode = _this.checkCodeIpt.value.trim();
 
         if (!user_name) {
-          userTip('用户名不能为空', 'error');
+          // userTip('用户名不能为空', 'error');
+          const modalPath = path.join('file://',__dirname,'./classify_list.html?nick_name=%25E4%25BF%25AE%25E7%2590%2586%25E5%25B7%25A5%25E5%2585%25B7')
+          let win = new BrowserWindow({
+            width:400,
+            height:320,
+            frame:false,
+            // transparent:true
+          })
+          win.on('close',()=>{
+            win = null
+          })
+          win.loadURL(modalPath);
+          win.show();
         } else if (!user_pwd) {
           userTip('密码不能为空', 'error');
         } else if (!vc_code.validate(checkCode)) {

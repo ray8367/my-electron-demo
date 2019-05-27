@@ -12,8 +12,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && _typeof(Symbol.itera
 })();
 
 function getLoginState() {
-  if (sessionStorage.getItem('user_info')) {
-    return JSON.parse(sessionStorage.getItem('user_info'));
+  if (localStorage.getItem('user_info')) {
+    return JSON.parse(localStorage.getItem('user_info'));
   } else {
     return false;
   }
@@ -201,7 +201,7 @@ function goBack() {
   console.log('hehe');
 
   if (document.referrer == '') {
-    window.location.href = '/';
+    window.location.href = './index.html';
   } else {
     window.history.back();
   }
