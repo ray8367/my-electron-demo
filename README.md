@@ -1,4 +1,4 @@
-# electron-quick-start
+# my-electron-demo
 
 **对electron学习的一次记录**
 ## 本例子按照官网的例子稍作修改
