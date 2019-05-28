@@ -1,9 +1,7 @@
-const electron = require('electron')
 const {
   app,
   BrowserWindow,
   Menu,
-  globalShortcut
 } = require('electron')
 
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
@@ -13,8 +11,8 @@ let win;
 function createWindow() {
   // 创建浏览器窗口。
   win = new BrowserWindow({
-    width: 1600,
-    height: 1200,
+    width: 800,
+    height: 600,
     webPreferences: {
       nodeIntegration: true
     }
@@ -43,11 +41,6 @@ function createWindow() {
 // 创建浏览器窗口时，调用这个函数。
 // 部分 API 在 ready 事件触发后才能使用。
 app.on('ready', () => {
-  // Register a 'CommandOrControl+Y' shortcut listener.
-  globalShortcut.register('CommandOrControl+Y', () => {
-    // Do stuff when Y and either Command/Control is pressed.
-    // alert('123');
-  })
   createWindow()
 })
 
