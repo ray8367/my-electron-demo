@@ -21,3 +21,13 @@ npm install
 # Run the app
 npm start
 ```
+
+## 关于打包
+
+```bash
+# Install
+npm install electron-packager -g
+# 示例
+electron-packager . 可执行文件的文件名 --win --out 打包成的文件夹名 --arch=x64位还是32位  --overwrite --ignore=node_modules
+# Run Build
+electron-packager . mall --win --out presenterTool --arch=x64 --overwrite --ignore=node_modules
