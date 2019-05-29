@@ -1,6 +1,7 @@
 # my-electron-demo
 
 **对electron学习的一次记录**
+## electron:使用 JavaScript, HTML 和 CSS 构建跨平台的桌面应用
 ## 本例子按照官网的例子稍作修改
 - 官网: [https://electronjs.org](https://electronjs.org)
 - 官方实例： [https://github.com/electron/electron-quick-start](https://github.com/electron/electron-quick-start)
